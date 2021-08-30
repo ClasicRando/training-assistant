@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editClient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.client.EditClientFragment">
+
+    <TextView
+        android:id="@+id/lblEditClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/lbl_edit_client_name"
+        android:labelFor="@id/etxtEditClientName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etxtEditClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEditClientName"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/lblEditClientStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/lbl_edit_client_start_date"
+        android:labelFor="@id/btnEditClientStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etxtEditClientName"/>
+
+    <Button
+        android:id="@+id/btnEditClientStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Start Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblEditClientStartDate"/>
+
+    <TextView
+        android:id="@+id/lblEditClientEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/lbl_edit_client_end_date"
+        android:labelFor="@id/btnEditClientEndDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEditClientStartDate"/>
+
+    <Button
+        android:id="@+id/btnEditClientEndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="End Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblEditClientEndDate"/>
+
+    <TextView
+        android:id="@+id/lblEditClientBankedSessions"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/lbl_edit_client_banked_sessions"
+        android:labelFor="@id/etxtEditClientBankedSessions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnEditClientEndDate"/>
+
+    <EditText
+        android:id="@+id/etxtEditClientBankedSessions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblEditClientBankedSessions"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

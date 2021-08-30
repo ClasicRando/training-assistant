@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    android:background="@drawable/item_border">
+
+    <TextView
+        android:id="@+id/txtClientItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/txt_client_item_name"/>
+
+    <TextView
+        android:id="@+id/txtClientItemIsActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/txt_client_item_is_active"/>
+
+    <TextView
+        android:id="@+id/txtClientItemScheduleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/txt_client_item_schedule_type"/>
+
+</LinearLayout>
